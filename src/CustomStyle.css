@@ -1,0 +1,16 @@
+.gallery-header {
+    justify-content: space-between;
+}
+
+.form-select {
+    width: 150px !important;
+}
+
+.form-select:hover {
+    cursor: pointer;
+}
+
+.gallery-header h4 {
+    float: left;
+    padding-right: 20px;
+}
