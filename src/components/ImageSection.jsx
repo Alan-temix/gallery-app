@@ -2,7 +2,7 @@ const BodyGrid = (props) => {
     let { webformatURL } = props
     return(
         <div className="individual-image-section">
-            <img src={webformatURL} />
+            <img alt="art-paint" src={webformatURL} />
         </div>
     )
 }

@@ -11,7 +11,7 @@ h2, h4 {
 }
 
 .form-select {
-    width: 150px !important;
+    width: 135px !important;
 }
 
 .form-select:hover {
@@ -30,12 +30,14 @@ h2, h4 {
     grid-gap: 10px;
 }
 
-.container-image-section img:hover {
+.container-image-section img:hover, 
+.container-image-section img:active {
     cursor: pointer;
     transform: scale(1.2);
     border-radius: 5px;
-    transition-property: transform;
+    transition-property: transform, border-radius;
     transition-duration: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 .individual-image-section img {
@@ -45,4 +47,33 @@ h2, h4 {
     height: 100%;
     max-width: 250px;
     max-height: 200px;
+}
+
+@media (max-width: 900px)  {
+    .container-image-section {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .App {
+        padding: 20px 40px 40px 40px;
+    }
+
+    .container-image-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    .gallery-header div{
+        margin: 0 auto;
+    }
+
+    .gallery-header h4 {
+        float: none;
+        padding: 0;
+    }
 }

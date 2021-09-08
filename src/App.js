@@ -26,9 +26,8 @@ function App() {
           setImages(data.hits);
       })
       setStatus(false);
-      console.log(images);
     }
-  }, [images, status]);
+  }, [imageType, status]);
 
   return (
     <div className="App">
